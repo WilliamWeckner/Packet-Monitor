@@ -6,7 +6,7 @@
 
 <p align="center">
   
-  Follow me on Twitter(https://twitter.com/njustn0)
+  Follow me on [Twitter](https://twitter.com/njustn0)
 </p>
 
 <br />
