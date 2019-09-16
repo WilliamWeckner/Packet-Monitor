@@ -6,7 +6,7 @@
 
 <p align="center">
   
-  ![Twitter <---](https://img.shields.io/twitter/follow/njustn0?style=social)
+  Follow me on Twitter(https://twitter.com/njustn0)
 </p>
 
 <br />
