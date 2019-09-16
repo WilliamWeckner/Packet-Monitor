@@ -1,4 +1,7 @@
-[![Expo](/PacketMonitor.png)]
+
+<p align="center">
+  <img width="512" height="512" src="/PacketMonitor.png">
+</p>
 
 
 <p align="center">
