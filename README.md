@@ -34,6 +34,7 @@ its my "first time" using Electron JS, the app is clearly not finished its an AL
 - [ ] Saving Data in DB
 - [ ] Changable interface - Lib bug
 
-
+## MY Socials if there is any questions / issues or if you want a feature
  Follow me on [Twitter](https://twitter.com/njustn0)
+ 
  Join My [Discord](https://discord.gg/mJVB5xE)
