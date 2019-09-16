@@ -1,0 +1,29 @@
+html,
+body {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.mainBody {
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+    /*Make the grid smaller than the container*/
+}
+
+.grid-container>div {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 13px;
+}
