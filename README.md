@@ -3,11 +3,6 @@
   <img width="256" height="256" src="/PacketMonitor.png">
 </p>
 
-
-<p align="center">
-  Follow me on [Twitter](https://twitter.com/njustn0)
-</p>
-
 <br />
 
 
@@ -38,3 +33,7 @@ its my "first time" using Electron JS, the app is clearly not finished its an AL
 - [ ] Changable Speed
 - [ ] Saving Data in DB
 - [ ] Changable interface - Lib bug
+
+
+ Follow me on [Twitter](https://twitter.com/njustn0)
+ Join My [Discord](https://discord.gg/mJVB5xE)
