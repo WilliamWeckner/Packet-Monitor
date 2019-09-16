@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width="512" height="512" src="/PacketMonitor.png">
+  <img width="256" height="256" src="/PacketMonitor.png">
 </p>
 
 
