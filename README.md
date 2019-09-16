@@ -3,7 +3,6 @@
   <img width="256" height="256" src="/PacketMonitor.png">
 </p>
 
-<br />
 
 <p align="center">
   ![Twitter Follow](https://img.shields.io/twitter/follow/njustn0?style=social)
