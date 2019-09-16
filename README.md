@@ -5,6 +5,11 @@
 
 <br />
 
+<p align="center">
+  ![Twitter Follow](https://img.shields.io/twitter/follow/njustn0?style=social)
+</p>
+
+<br />
 
 
 # Packet Speed Monitor
@@ -34,3 +39,6 @@ its my "first time" using Electron JS, the app is clearly not finished its an AL
 - [ ] Changable Speed
 - [ ] Saving Data in DB
 - [ ] Changable interface - Lib bug
+
+Now of course anyone that wanna help is welcomed 
+
