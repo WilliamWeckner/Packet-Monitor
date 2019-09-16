@@ -7,7 +7,6 @@
 <p align="center">
   
   ![Twitter Follow](https://img.shields.io/twitter/follow/njustn0?style=social)
-  
 </p>
 
 <br />
