@@ -7,7 +7,6 @@
 
 
 # Packet Speed Monitor
-### Net Speed Monitor's son
 
 # Description
 I made Packet Monitor to "continue" the devlopment of NetSpeedMonitor, since there where no more update since.. ages 
