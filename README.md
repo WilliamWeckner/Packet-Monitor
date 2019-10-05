@@ -15,5 +15,5 @@ also i felt like adding more features, but that wasn't the only reason, i also w
 its my "first time" using Electron JS, the app is clearly not finished its an ALPHA version.
 
 ## MY Socials if there is any questions / issues or if you want a feature
- [Twitter](https://twitter.com/njustn0)
- [Discord](https://discord.gg/mJVB5xE)
+ * [Twitter](https://twitter.com/njustn0) <br />
+ * [Discord](https://discord.gg/mJVB5xE)
