@@ -6,7 +6,7 @@
 <br />
 
 
-# Packet Speed Monitor
+# Packet Monitor 1
 
 # Description
 I made Packet Monitor to "continue" the devlopment of NetSpeedMonitor, since there where no more update since.. ages 
