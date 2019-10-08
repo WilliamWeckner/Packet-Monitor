@@ -106,15 +106,20 @@ class BigMonitor extends React.Component {
     }
 
     async componentDidMount() {
+        console.log("Component Mouted")
         //Start the monitoring
         ipcRenderer.on("update_data", async (event, arg) => {
+            console.log("Event 'update_data' fired")
             this.getCurrentMonthStats()
+            console.log("Called Month Stat func")
             this.getTodayStats()
+            console.log("Called Today Stat func")
 
             arg.forEach(async network => {
                 if (network.tx_sec < 0 && network.rx_sec < 0) return
-
+                console.log("Setting the new data")
                 this.setTodayStats(network.tx_sec, network.rx_sec)
+                console.log(network)
 
                 this.setState({
                     packetSpeed: {

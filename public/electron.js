@@ -102,4 +102,10 @@ function startElectron() {
 
     })
 
+    mainWindow.on('minimize', () => {
+        mainWindow.hide()
+
+    })
+
+
 }
