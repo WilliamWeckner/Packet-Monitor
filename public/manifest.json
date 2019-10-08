@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Packet Monitor",
+  "name": "Packet Speed Monitor",
   "icons": [
     {
       "src": "favicon.ico",
