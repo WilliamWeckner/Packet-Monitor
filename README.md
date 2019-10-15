@@ -46,7 +46,7 @@ its my "first time" using Electron JS, the app is clearly not finished its an AL
 - auto start will be added on future release
 
 #### If you found any weird behaviour, or you want to request a feature or you think something is wrong 
-- go inside #help and do your thing by tagging @Toukara#5929 or myself
+- hit me on discord, twitter or even open an issue  
 
 #### Im gonna post here incase of any updates
 
