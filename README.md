@@ -32,10 +32,7 @@ its my "first time" using Electron JS, the app is clearly not finished its an AL
 ## how to
 ===============
 
-* download the app from github :
-
-<https://github.com/Madscientiste/Packet-Monitor/releases/download/0.1.0/PacketMonitorV0.1.exe>
-
+* download the app from github : [Download Here](https://github.com/Madscientiste/Packet-Monitor/releases/download)
 * Execute it, and you are good to go
 
 ## Important Note
