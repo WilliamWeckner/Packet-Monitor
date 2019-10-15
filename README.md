@@ -21,7 +21,7 @@ i also felt like adding more features, learning electron, and knowing how devlop
 its my "first time" using Electron JS, the app is clearly not finished its an ALPHA version.
 
 
-## Requiresments  
+## Requirements  
 ===============
 
 * Clearly a pc, like if you don't have a pc then then.. then........ drink some tea
