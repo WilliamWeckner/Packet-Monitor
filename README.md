@@ -48,8 +48,6 @@ its my "first time" using Electron JS, the app is clearly not finished its an AL
 #### If you found any weird behaviour, or you want to request a feature or you think something is wrong 
 - hit me on discord, twitter or even open an issue  
 
-#### Im gonna post here incase of any updates
-
 Thankyou for your time <3
 
 ## MY Socials if there is any questions / issues or if you want a feature
