@@ -10,6 +10,7 @@
 
 # Introduction
 ==================
+
 * its an app about monitoring "the internet you used"
 - now don't get me wrong, the app will tells you how much internet you used since the day / month / session
 - you will tell me why, well its for those who use internet with a limited amount and want to track their usage
@@ -22,6 +23,7 @@ its my "first time" using Electron JS, the app is clearly not finished its an AL
 
 ## Requiresments  
 ===============
+
 * Clearly a pc, like if you don't have a pc then then.. then........ drink some tea
 * Windows 64bit
 * ***Internet*** :smugAYAYA: 
@@ -29,6 +31,7 @@ its my "first time" using Electron JS, the app is clearly not finished its an AL
 
 ## how to
 ===============
+
 * download the app from github : 
 <https://github.com/Madscientiste/Packet-Monitor/releases/download/0.1.0/PacketMonitorV0.1.exe>
 
@@ -36,6 +39,7 @@ its my "first time" using Electron JS, the app is clearly not finished its an AL
 
 ## Important Note
 ===============
+
 The black bar on the top isn't mean to be used, don't click on it or you might cause the app to crash
 - im gonna remove it on future releases
 
