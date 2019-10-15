@@ -26,7 +26,7 @@ its my "first time" using Electron JS, the app is clearly not finished its an AL
 
 * Clearly a pc, like if you don't have a pc then then.. then........ drink some tea
 * Windows 64bit
-* ***Internet*** :smugAYAYA: 
+* ***Internet***...
 
 
 ## how to
