@@ -14,7 +14,7 @@
 * its an app about monitoring "the internet you used"
 - now don't get me wrong, the app will tells you how much internet you used since the day / month / session
 - you will tell me why, well its for those who use internet with a limited amount and want to track their usage
--  or for who want to know their usage in general.
+- or for who want to know their usage in general.
 
 Packet Monitor is made to "continue" the devlopment of NetSpeedMonitor, since there where no more update since.. ages.
 i also felt like adding more features, learning electron, and knowing how devlopping an app is like, 
