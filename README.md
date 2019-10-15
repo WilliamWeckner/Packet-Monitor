@@ -38,17 +38,17 @@ its my "first time" using Electron JS, the app is clearly not finished its an AL
 ## Important Note
 ===============
 
-### The black bar on the top isn't mean to be used, don't click on it or you might cause the app to crash
+#### The black bar on the top isn't mean to be used, don't click on it or you might cause the app to crash
 - im gonna remove it on future releases
 
-### The app doesn't start with windows, so the app wont monitor anything since its turned off
+#### The app doesn't start with windows, so the app wont monitor anything since its turned off
 - be sure to turn it on if you want to monitor your data ! 
 - auto start will be added on future release
 
-### If you found any weird behaviour, or you want to request a feature or you think something is wrong 
+#### If you found any weird behaviour, or you want to request a feature or you think something is wrong 
 - go inside #help and do your thing by tagging @Toukara#5929 or myself
 
-### Im gonna post here incase of any updates
+#### Im gonna post here incase of any updates
 
 Thankyou for your time <3
 
