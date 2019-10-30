@@ -33,7 +33,9 @@ function startTray() {
 
     tray.setContextMenu(Menu.buildFromTemplate([
         {
-            label: 'Ayaya'
+            label: 'Ayaya', click: function () {
+
+            }
         },
 
         {

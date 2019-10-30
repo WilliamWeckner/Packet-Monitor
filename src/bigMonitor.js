@@ -5,7 +5,8 @@ import { Grid, Segment, Header, Image, Icon, Container, List, Divider } from 'se
 import 'semantic-ui-css/semantic.min.css'
 import './main.css'
 
-import { setData, getData } from './assets/scripts/databaseHandler.js'
+import database from './assets/scripts/databaseHandler.js'
+
 import moment from 'moment';
 
 const { ipcRenderer } = window.require('electron')
@@ -13,6 +14,12 @@ const { ipcRenderer } = window.require('electron')
 class BigMonitor extends React.Component {
     constructor(props) {
         super(props);
+
+
+        this.props = props
+
+        this.getData = database.getData.bind(this)
+        this.setData = database.setData.bind(this)
 
         this.formatBytes = this.formatBytes.bind(this)
         this.getTodayStats = this.getTodayStats.bind(this)
@@ -44,7 +51,7 @@ class BigMonitor extends React.Component {
         let sent = [0]
         let recv = [0]
 
-        let fetched = await getData()
+        let fetched = await this.getData()
             .catch(err => console.log(err))
         if (!fetched) return
 
@@ -68,7 +75,7 @@ class BigMonitor extends React.Component {
         let sent = [0]
         let recv = [0]
 
-        var fetched = await getData()
+        var fetched = await this.getData()
             .catch(err => console.log(err))
         if (!fetched) return
 
@@ -89,7 +96,7 @@ class BigMonitor extends React.Component {
 
     async setTodayStats(sent, recv) {
 
-        let fetched = await getData()
+        let fetched = await this.getData()
             .catch(err => console.log(err))
 
         let GetSent = 0
@@ -102,25 +109,18 @@ class BigMonitor extends React.Component {
                 GetRecv = data.packets.recv + recv
             })
         }
-        await setData(GetSent, GetRecv)
+        await this.setData(GetSent, GetRecv)
     }
 
     async componentDidMount() {
-        console.log("Component Mouted")
         //Start the monitoring
         ipcRenderer.on("update_data", async (event, arg) => {
-            console.log("Event 'update_data' fired")
             this.getCurrentMonthStats()
-            console.log("Called Month Stat func")
             this.getTodayStats()
-            console.log("Called Today Stat func")
 
             arg.forEach(async network => {
                 if (network.tx_sec < 0 && network.rx_sec < 0) return
-                console.log("Setting the new data")
                 this.setTodayStats(network.tx_sec, network.rx_sec)
-                console.log(network)
-
                 this.setState({
                     packetSpeed: {
                         up: network.tx_sec,
@@ -171,7 +171,7 @@ class BigMonitor extends React.Component {
         return (
             <div>
                 <Container textAlign='center' >
-                    <Container className={'ListBG'} style={{ marginTop: "50px" }}>
+                    <Container className={'ListBG'} style={{ margin: "10px" }}>
                         <List>
                             <Grid columns={2} divided>
 
