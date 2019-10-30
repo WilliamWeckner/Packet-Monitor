@@ -1,6 +1,7 @@
 const electron = require('electron')
 const { app, BrowserWindow, Tray, Menu, ipcMain } = electron
 const isDev = require("electron-is-dev");
+
 const path = require('path')
 const url = require('url')
 

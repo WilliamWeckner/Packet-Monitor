@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react';
 
-import { Grid, Segment, Header, Label, Button, Container, List, Input, Divider, Message } from 'semantic-ui-react'
+import { Grid, Dropdown, Header, Label, Button, Container, List, Input, Divider, Message } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 import './main.css'
 
@@ -70,13 +70,14 @@ class BigMonitor extends React.Component {
                             <Grid columns={"equal"} divided>
                                 <Grid.Row>
                                     <Grid.Column>
-                                        <List.Item>
+                                        <List.Item >
                                             <List.Content style={{ margin: "0px" }}>
                                                 <List.Header style={{ margin: "5px" }}>Database Dir</List.Header>
                                                 <Label style={{ margin: "0px" }}>{this.state.DatabasePath}</Label>
 
                                                 <Button style={{ margin: "5px" }} onClick={() => {
                                                     let NewDatabasePath = remote.dialog.showOpenDialogSync({ properties: ['openFile', 'openDirectory'] })
+                                                    if (!NewDatabasePath) return
                                                     localStorage.setItem("DatabasePath", NewDatabasePath)
 
 
@@ -131,6 +132,44 @@ class BigMonitor extends React.Component {
                             </Grid>
                         </List>
                     </Container>
+                    {/* 
+
+                    <Container className={'ListBG'} style={{ margin: "10px" }}>
+
+                        <Message negative hidden={this.state.error === false ? true : false}>
+                            <Message.Header>{this.state.error.code}</Message.Header>
+                            <p>{this.state.error.message}</p>
+                        </Message>
+
+                        <Message positive hidden={this.state.sucess === false ? true : false}>
+                            <p>{this.state.sucess}</p>
+                        </Message>
+
+
+                        <List>
+                            <Grid columns={"equal"} divided>
+
+                                <Grid.Row>
+                                    <Grid.Column>
+                                        <List.Item>
+                                            <List.Content style={{ margin: "0px" }}>
+                                                <List.Header style={{ margin: "5px" }}>Change Network</List.Header>
+                                                <Dropdown placeholder='Select Friend' fluid selection options={[
+                                                    {
+                                                        key: 'Jenny Hess',
+                                                        text: 'Jenny Hess',
+                                                        value: 'Jenny Hess',
+                                                    },
+                                                ]} />
+                                                <Button style={{ margin: "5px" }}>Import</Button>
+                                            </List.Content>
+                                        </List.Item>
+                                    </Grid.Column>
+                                </Grid.Row>
+
+                            </Grid>
+                        </List>
+                    </Container> */}
 
                 </Container>
             </div>

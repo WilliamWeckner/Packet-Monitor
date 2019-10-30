@@ -13,7 +13,7 @@ let nedb = new Datastore({ filename: DatabasePath, autoload: true });
 class database {
     static getData() {
         return new Promise((res, rej) => {
-            nedb.find({ _id: { $gte: `01/${moment().format("MM/Y")}` } }, function (err, docs) {
+            nedb.find({}, function (err, docs) {
                 if (err) rej(err)
                 if (docs.length) res(docs)
                 else rej("no_docs_found")
@@ -23,7 +23,7 @@ class database {
 
 
     static setData(sent, recv) {
-        return new Promise((res, rej) => {
+        return new Promise(function (res, rej) {
 
             var Schema = {
                 _id: moment().format("DD/MM/Y"),
@@ -53,12 +53,12 @@ class database {
     }
 
     static importSQLite(path) {
-        return new Promise((res, rej) => {
+        return new Promise(function (res, rej) {
             try {
                 const db = window.require('better-sqlite3')(path)
                 let rows = db.prepare(`SELECT * FROM traffic`).all()
 
-                rows.map(data => {
+                rows.foreach(function (data) {
                     if ((data.m === null)) return
                     let date = moment(`${data.m} ${data.d} ${data.y}`).format("DD/MM/Y")
                     var Schema = {
@@ -85,6 +85,8 @@ class database {
                             })
                         }
                     });
+
+                    return
                 })
             } catch (error) {
                 rej(error)

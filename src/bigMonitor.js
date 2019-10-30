@@ -9,7 +9,7 @@ import database from './assets/scripts/databaseHandler.js'
 
 import moment from 'moment';
 
-const { ipcRenderer } = window.require('electron')
+const { ipcRenderer, Cookies } = window.require('electron')
 
 class BigMonitor extends React.Component {
     constructor(props) {
@@ -80,10 +80,13 @@ class BigMonitor extends React.Component {
         if (!fetched) return
 
 
-
         fetched.map(data => {
-            sent.push(data.packets.sent)
-            recv.push(data.packets.recv)
+            let filter = data._id.split('/')
+            //2 = Year            //1 = Month            //0 = Day
+            if (filter[1] === moment().format('MM')) {
+                sent.push(data.packets.sent)
+                recv.push(data.packets.recv)
+            }
         })
 
         this.setState({
@@ -104,6 +107,7 @@ class BigMonitor extends React.Component {
 
         if (fetched) {
             fetched.map(data => {
+
                 if (data._id !== moment().format("DD/MM/Y")) return
                 GetSent = data.packets.sent + sent
                 GetRecv = data.packets.recv + recv
@@ -114,11 +118,13 @@ class BigMonitor extends React.Component {
 
     async componentDidMount() {
         //Start the monitoring
-        ipcRenderer.on("update_data", async (event, arg) => {
+        ipcRenderer.on("update_data", async (event, data) => {
             this.getCurrentMonthStats()
             this.getTodayStats()
 
-            arg.forEach(async network => {
+            data.forEach(async network => {
+
+
                 if (network.tx_sec < 0 && network.rx_sec < 0) return
                 this.setTodayStats(network.tx_sec, network.rx_sec)
                 this.setState({
